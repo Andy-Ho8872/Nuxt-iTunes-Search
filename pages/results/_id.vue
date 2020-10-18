@@ -22,10 +22,10 @@
                 :singerName="album.artistName"
                 :img="album.artworkUrl100"
                 />
-                <!-- {{ albumExists ?  albumData  : 'Album Not found' }} -->
             </div>
         </v-card>
     </div>
+    <!-- if data don't exist -->
     <div v-else>
         <h1 class="text-center">Album not found</h1>
     </div>
