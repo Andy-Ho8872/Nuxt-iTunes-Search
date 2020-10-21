@@ -13,6 +13,7 @@
                 </v-btn>
             </nuxt-link>
         </div>
+
         <v-card color="grey lighten-3" class="py-1 mx-auto" max-width="500">
             <div v-for="(album, index) in albumData" :key="index" class="ma-12">
                 <Card
@@ -24,6 +25,7 @@
                 />
             </div>
         </v-card>
+
     </div>
     <!-- if data don't exist -->
     <div v-else>
@@ -34,6 +36,7 @@
 <script>
 import axios from 'axios'
 import Card from '~/components/Card'
+import { mapState } from 'vuex'
 
 export default {
     head: {

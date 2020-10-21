@@ -1,4 +1,5 @@
 import axios from 'axios'
+// access vuex store through middleware
 
 // The middleware is for Authenticating Logic
 export default function({ params, store }) {

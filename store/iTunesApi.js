@@ -7,3 +7,11 @@ export const mutations = {
         state.albums = payload
     }
 }
+
+export const getters = {
+
+}
+
+export const actions = {
+
+}
