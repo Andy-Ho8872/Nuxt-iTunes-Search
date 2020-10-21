@@ -48,7 +48,7 @@ export default {
     asyncData({ params }) {
         return axios.get(`https://itunes.apple.com/search?term=${params.id}&entity=album`)
         .then(response => { 
-            // create it's own variable(albumData) to store data in it
+            // create it's own variable(albumData) to store data in it by using asyncData function
             return { albumData: response.data.results }
         })
     },
